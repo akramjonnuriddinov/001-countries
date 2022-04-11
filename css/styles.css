@@ -1,4 +1,56 @@
 
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("../fonts/NunitoSans-Light.woff2") format("woff2"),
+        url("../fonts/NunitoSans-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("../fonts/NunitoSans-Regular.woff2") format("woff2"),
+        url("../fonts/NunitoSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("../fonts/NunitoSans-SemiBold.woff2") format("woff2"),
+        url("../fonts/NunitoSans-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2"),
+        url("../fonts/NunitoSans-ExtraBold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+:root {
+    --header-bg: #fff;
+    --main-content-bg: #FAFAFA;
+    --card-bg: #fff;
+    --text-color: #111517;
+    --search-color: #848484;
+}
+
+.dark-mode {
+    --header-bg: #2B3844;
+    --main-content-bg: #202C36;
+    --card-bg: #2B3844;
+    --text-color: #fff;
+}
 
 /* GLOBAL */
 html {
@@ -11,15 +63,20 @@ html {
     box-sizing: inherit;
 }
 
+*:focus {
+    outline: 2px dashed var(--text-color);
+    outline-offset: 3px;
+}
+
 body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: #fff;
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: "Arial", sans-serif;
-    color: #222;
+    background-color: var(--main-content-bg);
+    font-size: 14px;
+    /* line-height: 1.5; */
+    font-family: "Nunito Sans", "Arial", sans-serif;
+    color: var(--text-color);
     margin: 0;
     padding: 0;
 }
@@ -32,9 +89,9 @@ img {
 /* CONTAINER */
 .container {
     width: 100%;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1320px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -42,4 +99,117 @@ img {
 /* MAIN-CONTENT */
 .main-content {
     flex-grow: 1;
+}
+
+/* SITE-HEADER */
+.site-header {
+    background-color: var(--header-bg);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 23.5px;
+    padding-bottom: 23.5px;
+}
+
+.header-title {
+    font-size: 24px;
+    line-height: 32.74px;
+    margin: 0;
+    margin-right: 10px;
+    font-weight: 800;
+}
+
+.dark-mode-btn {
+    /* outline: none; */
+    border: none;
+    background-color: transparent;
+}
+
+.dark-mode-btn:hover {
+    cursor: pointer;
+}
+
+.button-flex {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 21.82px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.button-text {
+    display: inline-block;
+    margin-left: 8px;
+    white-space: nowrap;
+}
+
+.button-svg {
+    color: #fff;
+}
+
+
+.main-content {
+    background-color: var(--main-content-bg);
+}
+
+.main-container {
+    padding-top: 48px;
+    padding-bottom: 45px;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 48px;
+}
+
+.search-bar {
+    background-image: url("../img/icon/icon-search-black.svg");
+    background-repeat: no-repeat;
+    background-position: left 34px center;
+    padding-top: 19px ;
+    padding-bottom: 19px;
+    padding-left: 74px;
+    width: 480px;
+    /* width: 100%; */
+    outline: none;
+    border: none;
+    background-color: var(--header-bg);
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.search-bar::placeholder {
+    color: var(--text-color);
+}
+
+.select-country {
+    border: none;
+    outline: none;
+    padding: 18px 77px 18px 24px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: var(--header-bg);
+    color: var(--text-color);
+    appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    background-image: url("../img/icon/drop-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 22px center;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+
+.select-country-item {
+    /* padding-bottom: 8px; */
 }
