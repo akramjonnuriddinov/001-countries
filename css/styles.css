@@ -25,7 +25,7 @@
     font-style: normal;
     font-display: swap;
 }
-
+/* 
 @font-face {
     font-family: "Nunito Sans";
     src: url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2"),
@@ -33,7 +33,7 @@
     font-weight: 800;
     font-style: normal;
     font-display: swap;
-}
+} */
 
 
 
@@ -305,8 +305,97 @@ img {
     width: 136px;
     border-radius: 6px;
     background-color: var(--back-to-link-color);
+    margin-bottom: 80px;
 }
 
 .back-to-link-text {
     margin-left: 10px;
+}
+
+
+.detail-country-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail-info-title {
+    margin: 0;
+    margin-bottom: 23px;
+    font-weight: 800;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.detail-country-img {
+    border-radius: 6px;
+    display: block;
+    margin-right: 120px;
+}
+
+.country-info-list {
+    display: flex;
+    margin-bottom: 68px;
+}
+
+.detail-country-info-wrapper {
+    padding: 0;
+}
+
+.country-info-item:first-child {
+    margin-right: 141px;
+}
+
+.detail-country-info-wrapper .country-info,
+.detail-country-info-wrapper .country-value {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.border-ountries {
+    display: flex;
+    align-items: center;
+}
+
+.border-contries-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0;
+    margin-right: 15px;
+}
+
+.border-contries-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.border-contries-item {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: var(--header-bg);
+    padding: 5px 28px 4px 27px;
+}
+
+.border-contries-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.border-contries-link {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    outline: none;
+}
+
+.border-contries-item:hover {
+    opacity: 0.8;
+}
+
+.border-contries-item:active {
+    opacity: 0.6;
 }
