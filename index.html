@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>countries</title>
     <!-- NORMALIZE -->
     <link rel="stylesheet" href="./css/normalize.css">
     <!-- STYLES -->
@@ -16,7 +16,7 @@
         <div class="container header-container">
             <h2 class="header-title">Where in the world?</h2>
             <div class="dark-mode-menu">
-                <button class="dark-mode-btn" type="button">
+                <button class="dark-mode-btn" id="chk" type="button">
                     <span class="button-flex">
                         <svg class="button-svg" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.553 11.815c-3.884 0-7.034-2.887-7.034-6.447 0-1.343.448-2.586 1.212-3.618C3.691 2.695 1.5 5.331 1.5 8.438c0 3.9 3.45 7.062 7.704 7.062 3.389 0 6.266-2.007 7.296-4.796a7.458 7.458 0 0 1-3.947 1.111Z" fill="#fff" stroke="currentColor" stroke-width="1.25"/></svg>
                         <span class="button-text">Dark Mode</span>
@@ -42,156 +42,156 @@
 
             <ul class="countries-list">
                 <li class="countries-item">
+                    <img class="country-flag" src="img/germany.jpg" srcset="img/germany.jpg 1x, img/germany@2x.jpg 2x" alt="Flag" width="264" height="160">
                     <a class="countries-item-link" href="detail.html">
-                        <img class="country-flag" src="img/germany.jpg" srcset="img/germany.jpg 1x, img/germany@2x.jpg 2x" alt="Flag" width="264" height="160">
                         <h3 class="country-title">Germany</h3>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Population: </h4>
-                            <p class="country-value">81,770,900</p>
-                        </div>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Region: </h4>
-                            <p class="country-value">Europe</p>
-                        </div>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Capital: </h4>
-                            <p class="country-value">Berlin</p>
-                        </div>
                     </a>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Population: </h4>
+                        <p class="country-value">81,770,900</p>
+                    </div>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Region: </h4>
+                        <p class="country-value">Europe</p>
+                    </div>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Capital: </h4>
+                        <p class="country-value">Berlin</p>
+                    </div>
                 </li>
 
                 <li class="countries-item">
+                    <img class="country-flag" src="./img/usa.jpg" srcset="./img/usa.jpg 1x, ./img/usa@2x.jpg 2x" alt="Flag" width="264" height="160">
                     <a class="countries-item-link" href="detail.html">
-                        <img class="country-flag" src="./img/usa.jpg" srcset="./img/usa.jpg 1x, ./img/usa@2x.jpg 2x" alt="Flag" width="264" height="160">
                         <h3 class="country-title">United States of America</h3>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Population: </h4>
-                            <p class="country-value">323,947,000</p>
-                        </div>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Region: </h4>
-                            <p class="country-value">Americas</p>
-                        </div>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Capital: </h4>
-                            <p class="country-value">Washington, D.C.</p>
-                        </div>
                     </a>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Population: </h4>
+                        <p class="country-value">323,947,000</p>
+                    </div>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Region: </h4>
+                        <p class="country-value">Americas</p>
+                    </div>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Capital: </h4>
+                        <p class="country-value">Washington, D.C.</p>
+                    </div>
                 </li>
 
                 <li class="countries-item">
+                    <img class="country-flag" src="./img/brazil.jpg" srcset="./img/brazil.jpg 1x, ./img/brazil@2x.jpg 2x" alt="Flag" width="264" height="160">
                     <a class="countries-item-link" href="detail.html">
-                        <img class="country-flag" src="./img/brazil.jpg" srcset="./img/brazil.jpg 1x, ./img/brazil@2x.jpg 2x" alt="Flag" width="264" height="160">
                         <h3 class="country-title">Brazil</h3>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Population: </h4>
-                            <p class="country-value">206,135,893</p>
-                        </div>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Region: </h4>
-                            <p class="country-value">Americas</p>
-                        </div>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Capital: </h4>
-                            <p class="country-value">Brasília</p>
-                        </div>
                     </a>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Population: </h4>
+                        <p class="country-value">206,135,893</p>
+                    </div>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Region: </h4>
+                        <p class="country-value">Americas</p>
+                    </div>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Capital: </h4>
+                        <p class="country-value">Brasília</p>
+                    </div>
                 </li>
 
                 <li class="countries-item">
+                    <img class="country-flag" src="./img/iceland.jpg" srcset="./img/iceland.jpg 1x, ./img/iceland.jpg@2x 2x" alt="Flag" width="264" height="160">
                     <a class="countries-item-link" href="detail.html">
-                        <img class="country-flag" src="./img/iceland.jpg" srcset="./img/iceland.jpg 1x, ./img/iceland.jpg@2x 2x" alt="Flag" width="264" height="160">
                         <h3 class="country-title">Iceland</h3>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Population: </h4>
-                            <p class="country-value">334,300</p>
-                        </div>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Region: </h4>
-                            <p class="country-value">Europe</p>
-                        </div>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Capital: </h4>
-                            <p class="country-value">Reykjavík</p>
-                        </div>
                     </a>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Population: </h4>
+                        <p class="country-value">334,300</p>
+                    </div>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Region: </h4>
+                        <p class="country-value">Europe</p>
+                    </div>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Capital: </h4>
+                        <p class="country-value">Reykjavík</p>
+                    </div>
                 </li>
 
 
                 <li class="countries-item">
+                    <img class="country-flag" src="./img/afghanistan.jpg" srcset="./img/afghanistan.jpg 1x, ./img/afghanistan@2x.jpg 2x" alt="Flag" width="264" height="160">
                     <a class="countries-item-link" href="detail.html">
-                        <img class="country-flag" src="./img/afghanistan.jpg" srcset="./img/afghanistan.jpg 1x, ./img/afghanistan@2x.jpg 2x" alt="Flag" width="264" height="160">
                         <h3 class="country-title">Afghanistan</h3>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Population: </h4>
-                            <p class="country-value">27,657,145</p>
-                        </div>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Region: </h4>
-                            <p class="country-value">Asia</p>
-                        </div>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Capital: </h4>
-                            <p class="country-value">Kabul</p>
-                        </div>
                     </a>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Population: </h4>
+                        <p class="country-value">27,657,145</p>
+                    </div>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Region: </h4>
+                        <p class="country-value">Asia</p>
+                    </div>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Capital: </h4>
+                        <p class="country-value">Kabul</p>
+                    </div>
                 </li>
 
                 <li class="countries-item">
+                    <img class="country-flag" src="img/aland-islands.jpg" srcset="img/aland-islands.jpg 1x, img/aland-islands@2x.jpg 2x" alt="Flag" width="264" height="160">
                     <a class="countries-item-link" href="detail.html">
-                        <img class="country-flag" src="img/aland-islands.jpg" srcset="img/aland-islands.jpg 1x, img/aland-islands@2x.jpg 2x" alt="Flag" width="264" height="160">
                         <h3 class="country-title">Åland Islands</h3>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Population: </h4>
-                            <p class="country-value">28,875</p>
-                        </div>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Region: </h4>
-                            <p class="country-value">Europe</p>
-                        </div>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Capital: </h4>
-                            <p class="country-value">Mariehamn</p>
-                        </div>
                     </a>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Population: </h4>
+                        <p class="country-value">28,875</p>
+                    </div>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Region: </h4>
+                        <p class="country-value">Europe</p>
+                    </div>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Capital: </h4>
+                        <p class="country-value">Mariehamn</p>
+                    </div>
                 </li>
 
                 <li class="countries-item">
+                    <img class="country-flag" src="./img/albania.jpg" srcset="./img/albania.jpg 1x, ./img/albania@2x.jpg 2x" alt="Flag" width="264" height="160">
                     <a class="countries-item-link" href="detail.html">
-                        <img class="country-flag" src="./img/albania.jpg" srcset="./img/albania.jpg 1x, ./img/albania@2x.jpg 2x" alt="Flag" width="264" height="160">
                         <h3 class="country-title">Albania</h3>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Population: </h4>
-                            <p class="country-value">2,886,026</p>
-                        </div>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Region: </h4>
-                            <p class="country-value">Europe</p>
-                        </div>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Capital: </h4>
-                            <p class="country-value">Tirana</p>
-                        </div>
                     </a>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Population: </h4>
+                        <p class="country-value">2,886,026</p>
+                    </div>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Region: </h4>
+                        <p class="country-value">Europe</p>
+                    </div>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Capital: </h4>
+                        <p class="country-value">Tirana</p>
+                    </div>
                 </li>
 
                 <li class="countries-item">
+                    <img class="country-flag" src="./img/algeria.jpg" srcset="./img/algeria.jpg 1x, ./img/algeria@2x.jpg 2x" alt="Flag" width="264" height="160">
                     <a class="countries-item-link" href="detail.html">
-                        <img class="country-flag" src="./img/algeria.jpg" srcset="./img/algeria.jpg 1x, ./img/algeria@2x.jpg 2x" alt="Flag" width="264" height="160">
                         <h3 class="country-title">Algeria</h3>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Population: </h4>
-                            <p class="country-value">40,400,000</p>
-                        </div>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Region: </h4>
-                            <p class="country-value">Africa</p>
-                        </div>
-                        <div class="country-info-wrapper">
-                            <h4 class="country-info">Capital: </h4>
-                            <p class="country-value">Algiers</p>
-                        </div>
                     </a>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Population: </h4>
+                        <p class="country-value">40,400,000</p>
+                    </div>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Region: </h4>
+                        <p class="country-value">Africa</p>
+                    </div>
+                    <div class="country-info-wrapper">
+                        <h4 class="country-info">Capital: </h4>
+                        <p class="country-value">Algiers</p>
+                    </div>
                 </li>
             </ul>
         </div>
