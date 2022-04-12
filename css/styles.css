@@ -30,7 +30,7 @@
     font-family: "Nunito Sans";
     src: url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2"),
         url("../fonts/NunitoSans-ExtraBold.woff") format("woff");
-    font-weight: bold;
+    font-weight: 800;
     font-style: normal;
     font-display: swap;
 }
@@ -51,6 +51,7 @@
     --card-bg: #2B3844;
     --text-color: #fff;
 }
+
 
 /* GLOBAL */
 html {
@@ -105,6 +106,7 @@ img {
 .site-header {
     background-color: var(--header-bg);
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 6px;
 }
 
 .header-container {
@@ -124,7 +126,7 @@ img {
 }
 
 .dark-mode-btn {
-    /* outline: none; */
+    outline: none;
     border: none;
     background-color: transparent;
 }
@@ -149,9 +151,8 @@ img {
 }
 
 .button-svg {
-    color: #fff;
+    color: var(--text-color);
 }
-
 
 .main-content {
     background-color: var(--main-content-bg);
@@ -230,6 +231,14 @@ img {
     padding-bottom: 46px;
     box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
     margin-bottom: 75px;
+    display: flex;
+}
+
+.countries-item-link {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    outline: none;
 }
 
 .countries-item:not(:nth-child(4n)) {
@@ -247,6 +256,9 @@ img {
     margin: 0;
     padding-left: 24px;
     margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 26px;
+    /* font-weight: 800; */
 }
 
 .country-info-wrapper {
