@@ -88,6 +88,10 @@ body {
     padding: 0;
 }
 
+.detail-body {
+    background-color: var(--detail-bg-color);
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -294,7 +298,6 @@ img {
 
 /* DETAIL HTML */
 .detail-main-content {
-    background-color: var(--detail-bg-color);
 }
 
 .back-to-link {
@@ -340,6 +343,7 @@ img {
 
 .detail-country-info-wrapper {
     padding: 0;
+    white-space: nowrap;
 }
 
 .country-info-item:first-child {
