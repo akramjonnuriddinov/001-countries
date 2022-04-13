@@ -1,23 +1,4 @@
 
-// const elDarkModeButton = document.querySelector(".dark-mode-btn");
-
-// elDarkModeButton.addEventListener('click', function () {
-//     document.body.classList.toggle('dark-mode');
-    
-// });
-
-
-
-// const check = document.getElementById('chk');
-
-// check.addEventListener('change', () => {
-//   document.body.classList.toggle('dark-mode');
-//   localStorage.darkMode=!localStorage.darkMode;
-// });
-
-// window.onload=function() {
-//   if(localStorage.darkMode) document.body.classList.toggle('dark-mode');
-// }
 
 document.addEventListener("DOMContentLoaded", function () {
     const theme = localStorage.getItem("theme", "dark");
