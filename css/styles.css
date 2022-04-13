@@ -379,6 +379,9 @@ img {
     cursor: pointer;
     background-color: var(--header-bg);
     padding: 5px 28px 4px 27px;
+    transition:
+        transform 0.4s ease,
+        opacity 0.4s ease;
 }
 
 .border-contries-item:not(:last-child) {
@@ -393,9 +396,9 @@ img {
 }
 
 .border-contries-item:hover {
-    opacity: 0.8;
+    transform: scale(0.8);
 }
 
 .border-contries-item:active {
-    opacity: 0.6;
+    opacity: 0.8;
 }
