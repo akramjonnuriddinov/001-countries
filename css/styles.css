@@ -46,7 +46,7 @@
     --detail-bg-color: #fff;
     --place-holder-color: rgba(132, 132, 132, 1);
     --back-to-link-color: transparent;
-    --dark-mode-svg-bg: #000;
+    --dark-mode-svg-bg: var(--text-color);
 }
 
 .dark-mode {
@@ -57,7 +57,7 @@
     --detail-bg-color: #202c36;
     --place-holder-color: #fff;
     --back-to-link-color: rgba(43, 56, 68, 1);
-    --dark-mode-svg-bg: #fff;
+    --dark-mode-svg-bg: transparent;
 }
 
 
