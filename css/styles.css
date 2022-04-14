@@ -46,6 +46,7 @@
     --detail-bg-color: #fff;
     --place-holder-color: rgba(132, 132, 132, 1);
     --back-to-link-color: transparent;
+    --dark-mode-svg-bg: #000;
 }
 
 .dark-mode {
@@ -56,6 +57,7 @@
     --detail-bg-color: #202c36;
     --place-holder-color: #fff;
     --back-to-link-color: rgba(43, 56, 68, 1);
+    --dark-mode-svg-bg: #fff;
 }
 
 
@@ -133,10 +135,12 @@ img {
     margin-right: 10px;
     font-weight: 800;
     white-space: nowrap;
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 .dark-mode-btn {
-    outline: none;
+    /* outline: none; */
     border: none;
     background-color: transparent;
 }
@@ -161,7 +165,8 @@ img {
 }
 
 .button-svg {
-    color: var(--text-color);
+    color: var(--dark-mode-svg-bg);
+    fill: var(--dark-mode-svg-bg);
 }
 
 .main-container {
@@ -201,7 +206,7 @@ img {
 
 .select-country {
     border: none;
-    outline: none;
+    /* outline: none; */
     padding: 18px 77px 18px 24px;
     display: inline-block;
     font-size: 14px;
@@ -243,7 +248,7 @@ img {
     display: inline-block;
     text-decoration: none;
     color: var(--text-color);
-    outline: none;
+    /* outline: none; */
     transition: text-indent 0.1s ease;
 }
 
@@ -408,4 +413,8 @@ img {
 
 .border-contries-item:active {
     opacity: 0.8;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
 }
