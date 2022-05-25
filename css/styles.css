@@ -1,3 +1,14 @@
+:root {
+    --header-bg: #fff;
+    --main-content-bg: #FAFAFA;
+    --card-bg: #fff;
+    --text-color: #111517;
+    --search-color: #848484;
+    --detail-bg-color: #fff;
+    --place-holder-color: rgba(132, 132, 132, 1);
+    --back-to-link-color: transparent;
+    --dark-mode-svg-bg: var(--text-color);
+}
 
 @font-face {
     font-family: "Nunito Sans";
@@ -25,29 +36,6 @@
     font-style: normal;
     font-display: swap;
 }
-/* 
-@font-face {
-    font-family: "Nunito Sans";
-    src: url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2"),
-        url("../fonts/NunitoSans-ExtraBold.woff") format("woff");
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-} */
-
-
-
-:root {
-    --header-bg: #fff;
-    --main-content-bg: #FAFAFA;
-    --card-bg: #fff;
-    --text-color: #111517;
-    --search-color: #848484;
-    --detail-bg-color: #fff;
-    --place-holder-color: rgba(132, 132, 132, 1);
-    --back-to-link-color: transparent;
-    --dark-mode-svg-bg: var(--text-color);
-}
 
 .dark-mode {
     --header-bg: #2B3844;
@@ -73,8 +61,7 @@ html {
 }
 
 *:focus {
-    outline: 2px dashed var(--text-color);
-    outline-offset: 3px;
+    outline: none;
 }
 
 body {
@@ -83,7 +70,6 @@ body {
     height: 100%;
     background-color: var(--main-content-bg);
     font-size: 14px;
-    /* line-height: 1.5; */
     font-family: "Nunito Sans", "Arial", sans-serif;
     color: var(--text-color);
     margin: 0;
@@ -140,7 +126,6 @@ img {
 }
 
 .dark-mode-btn {
-    /* outline: none; */
     border: none;
     background-color: transparent;
 }
@@ -181,10 +166,18 @@ img {
     padding-bottom: 48px;
 }
 
+.input-wrapper {
+    position: relative;
+    display: flex;
+}
+
+.input-wrapper svg {
+    color: var(--place-holder-color);
+    position: absolute;
+    left: 34px;
+    top: 21px;
+}
 .search-bar {
-    background-image: url("../img/icon/icon-search-black.svg");
-    background-repeat: no-repeat;
-    background-position: left 34px center;
     padding-top: 19px ;
     padding-bottom: 19px;
     padding-left: 74px;
@@ -206,7 +199,6 @@ img {
 
 .select-country {
     border: none;
-    /* outline: none; */
     padding: 18px 77px 18px 24px;
     display: inline-block;
     font-size: 14px;
@@ -226,13 +218,11 @@ img {
 
 .countries-list {
     display: flex;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
     margin-bottom: -75px;
-    /* margin-right: -75px; */
 }
 
 .countries-item {
@@ -241,15 +231,17 @@ img {
     padding-bottom: 46px;
     box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
     margin-bottom: 75px;
-    /* display: flex; */
+    position: relative;
 }
 
 .countries-item-link {
     display: inline-block;
     text-decoration: none;
     color: var(--text-color);
-    /* outline: none; */
+    outline: none;
     transition: text-indent 0.1s ease;
+    position: absolute;
+    top: 184px;
 }
 
 .countries-item:not(:nth-child(4n)) {
@@ -263,7 +255,7 @@ img {
 .country-flag {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    margin-bottom: 24px;
+    margin-bottom: 67px;
     display: block;
 }
 
@@ -273,7 +265,6 @@ img {
     margin-bottom: 16px;
     font-size: 18px;
     line-height: 26px;
-    /* font-weight: 800; */
 }
 
 .country-info-wrapper {
@@ -302,8 +293,6 @@ img {
 
 
 /* DETAIL HTML */
-.detail-main-content {
-}
 
 .back-to-link {
     text-decoration: none;
